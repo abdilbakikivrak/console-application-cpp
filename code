@@ -21,7 +21,7 @@ int main()
     {
         while (true)
         {
-            std::cout << "Enter password : ";  getline(std::cin, pass);
+            std::cout << "sifre girin : ";  getline(std::cin, pass);
             text = read_file(pass);
             /*if(text == "Invalid password!")
             {
@@ -47,7 +47,7 @@ int main()
         write_file(encrypted_text, encrypted_pass);
     }
 }
-//checking whether the file exists
+//dosyanın var olup olmadığını kontrol edecek 
 bool is_file_exists()
 {
     //std::ifstream file;
@@ -117,7 +117,7 @@ std::string  encrypt_caesar(std::string text, int key)
 
 }
 
-// this function is filled with logic errors. :D
+// bu islev mantık hatalarıyla doludur. :D
 std::string decrypt_ceaser(std::string text, int key)
 {
     std::string charachters = "ABCDEFGHIJKLMNOPRSTUVYZabcdefghijklmnoprstuvyz";
