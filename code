@@ -87,7 +87,7 @@ std::string read_file(std::string input)
         return text;
 
     else
-        return "Invalid password!";
+        return "Geçersiz şifre!";
 }
 
 std::string  encrypt_caesar(std::string text, int key)
